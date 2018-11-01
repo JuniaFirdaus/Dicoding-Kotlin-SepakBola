@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                tools:text="Sun 15 May" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_home"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/txt_score"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="14sp"
+                tools:text="FC Barcelona" />
+
+            <TextView
+                android:id="@+id/txt_away"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txt_score"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                tools:text="Liverpool" />
+
+            <TextView
+                android:id="@+id/txt_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="4 : 0" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
